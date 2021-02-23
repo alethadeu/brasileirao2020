@@ -1,0 +1,32 @@
+
+{   "id": 1,
+    "page":1,
+    "actions": [
+        {   "team_type": "HOME",
+            "time": 12,
+            "action_type": "GOL",
+            "description": "Jô 1-0"
+        },
+        
+        {
+            "team_type": "HOME",
+            "time": 67,
+            "action_type": "GOL",
+            "description": "Otero 2-0"
+        },
+        
+        {
+            "team_type": "AWAY",
+            "time": 8,
+            "action_type": "EXPULSAO",
+            "description": "Felipe Melo, falta durrísima"
+        },
+        
+        {
+            "team_type": "AWAY",
+            "time": 35,
+            "action_type": "PENALTI_PERDIDO",
+            "description": "Luiz Adriano titubeou e Cássio defendeu"
+        }
+    ]
+}

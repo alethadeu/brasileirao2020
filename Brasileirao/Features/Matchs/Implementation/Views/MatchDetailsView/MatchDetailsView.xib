@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MatchDetailsView" customModule="Brasileirao" customModuleProvider="target">
+            <connections>
+                <outlet property="matchDetailsView" destination="NzS-uc-JHs" id="h9R-cH-Zxp"/>
+                <outlet property="viewContent" destination="y9m-LW-D5x" id="9qR-9s-awF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="NzS-uc-JHs">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jBd-Va-pMi">
+                    <rect key="frame" x="0.0" y="104" width="414" height="758"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y9m-LW-D5x" userLabel="Content">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="y9m-LW-D5x" firstAttribute="leading" secondItem="jBd-Va-pMi" secondAttribute="leading" id="BLl-Ma-rFc"/>
+                        <constraint firstAttribute="bottom" secondItem="y9m-LW-D5x" secondAttribute="bottom" id="HgD-Cs-raH"/>
+                        <constraint firstItem="y9m-LW-D5x" firstAttribute="top" secondItem="jBd-Va-pMi" secondAttribute="top" id="deF-Zw-Q7y"/>
+                        <constraint firstAttribute="trailing" secondItem="y9m-LW-D5x" secondAttribute="trailing" id="w3x-xs-SLm"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="hAD-u9-Wdv"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="CHL-Ul-UK7"/>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F02-gX-JuF" userLabel="Header">
+                    <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3X-Mw-xLR">
+                            <rect key="frame" x="20" y="0.0" width="40" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="nk8-tC-l1Q"/>
+                            </constraints>
+                            <state key="normal" image="chevron.down" catalog="system"/>
+                            <connections>
+                                <action selector="backAction:" destination="-1" eventType="touchUpInside" id="pQl-ia-WlO"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rodada 28" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHk-Az-xc8">
+                            <rect key="frame" x="0.0" y="19.5" width="394" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="HHk-Az-xc8" firstAttribute="centerY" secondItem="g3X-Mw-xLR" secondAttribute="centerY" id="0io-HP-EOl"/>
+                        <constraint firstAttribute="bottom" secondItem="g3X-Mw-xLR" secondAttribute="bottom" id="MGD-Lq-sEt"/>
+                        <constraint firstItem="g3X-Mw-xLR" firstAttribute="leading" secondItem="F02-gX-JuF" secondAttribute="leading" constant="20" id="POE-Wo-sRk"/>
+                        <constraint firstAttribute="height" constant="60" id="Uze-Lx-bTQ"/>
+                        <constraint firstItem="g3X-Mw-xLR" firstAttribute="top" secondItem="F02-gX-JuF" secondAttribute="top" id="bZ1-X6-Xal"/>
+                        <constraint firstItem="HHk-Az-xc8" firstAttribute="leading" secondItem="F02-gX-JuF" secondAttribute="leading" id="gxJ-k5-fnd"/>
+                        <constraint firstAttribute="trailing" secondItem="HHk-Az-xc8" secondAttribute="trailing" constant="20" id="lWO-7u-PrL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Acy-x0-pL4"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="jBd-Va-pMi" firstAttribute="leading" secondItem="Acy-x0-pL4" secondAttribute="leading" id="1Fz-Zn-aMk"/>
+                <constraint firstItem="F02-gX-JuF" firstAttribute="leading" secondItem="Acy-x0-pL4" secondAttribute="leading" id="232-Mk-2yW"/>
+                <constraint firstItem="y9m-LW-D5x" firstAttribute="width" secondItem="NzS-uc-JHs" secondAttribute="width" id="5iH-8D-LZE"/>
+                <constraint firstItem="Acy-x0-pL4" firstAttribute="bottom" secondItem="jBd-Va-pMi" secondAttribute="bottom" id="JQH-kB-wTS"/>
+                <constraint firstItem="Acy-x0-pL4" firstAttribute="trailing" secondItem="jBd-Va-pMi" secondAttribute="trailing" id="Ygj-CV-G9H"/>
+                <constraint firstItem="jBd-Va-pMi" firstAttribute="top" secondItem="F02-gX-JuF" secondAttribute="bottom" id="mh6-xR-QLB"/>
+                <constraint firstItem="y9m-LW-D5x" firstAttribute="height" secondItem="NzS-uc-JHs" secondAttribute="height" id="rft-4C-wCq"/>
+                <constraint firstItem="F02-gX-JuF" firstAttribute="top" secondItem="Acy-x0-pL4" secondAttribute="top" id="tIE-fb-WCi"/>
+                <constraint firstItem="Acy-x0-pL4" firstAttribute="trailing" secondItem="F02-gX-JuF" secondAttribute="trailing" id="zV5-D5-oe0"/>
+            </constraints>
+            <point key="canvasLocation" x="99" y="122"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

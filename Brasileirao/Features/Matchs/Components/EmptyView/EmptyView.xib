@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" interfaceStyle="light" id="iN0-l3-epB" customClass="EmptyView" customModule="Brasileirao" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88F-Ib-kSY">
+                    <rect key="frame" x="69.5" y="52.5" width="60.5" height="119.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                    <color key="textColor" systemColor="secondaryLabelColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqQ-xh-NiW">
+                    <rect key="frame" x="270" y="52.5" width="60.5" height="119.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                    <color key="textColor" systemColor="secondaryLabelColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" horizontalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="esO-cT-Wqd" customClass="AnimationView" customModule="Lottie">
+                    <rect key="frame" x="150" y="62" width="100" height="100"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Jf0-vY-9NU"/>
+                        <constraint firstAttribute="height" constant="100" id="vpw-Km-HFh"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="soccerBallAnimation"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PARTIDA AINDA NÃO INICIADA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTj-zz-PM2">
+                    <rect key="frame" x="69.5" y="192" width="261" height="19.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P90-yV-3wd">
+                    <rect key="frame" x="176.5" y="211.5" width="47" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="Voltar"/>
+                    <connections>
+                        <action selector="backAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="EQ7-Vf-Vve"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="dTj-zz-PM2" firstAttribute="leading" secondItem="88F-Ib-kSY" secondAttribute="leading" id="C7a-2g-cYT"/>
+                <constraint firstItem="fqQ-xh-NiW" firstAttribute="centerY" secondItem="esO-cT-Wqd" secondAttribute="centerY" id="FQT-qE-qNh"/>
+                <constraint firstItem="dTj-zz-PM2" firstAttribute="trailing" secondItem="fqQ-xh-NiW" secondAttribute="trailing" id="FnO-cB-Jgw"/>
+                <constraint firstItem="P90-yV-3wd" firstAttribute="centerX" secondItem="dTj-zz-PM2" secondAttribute="centerX" id="HvN-GS-XVJ"/>
+                <constraint firstItem="esO-cT-Wqd" firstAttribute="leading" secondItem="88F-Ib-kSY" secondAttribute="trailing" constant="20" id="Wso-Pg-KP2"/>
+                <constraint firstItem="esO-cT-Wqd" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="cbw-7I-Rqd"/>
+                <constraint firstItem="esO-cT-Wqd" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" constant="-35" id="iZO-Fd-Jzm"/>
+                <constraint firstItem="fqQ-xh-NiW" firstAttribute="leading" secondItem="esO-cT-Wqd" secondAttribute="trailing" constant="20" id="kdN-pt-mF1"/>
+                <constraint firstItem="P90-yV-3wd" firstAttribute="top" secondItem="dTj-zz-PM2" secondAttribute="bottom" id="lqc-JF-a4n"/>
+                <constraint firstItem="dTj-zz-PM2" firstAttribute="top" secondItem="esO-cT-Wqd" secondAttribute="bottom" constant="30" id="rML-Mc-YpN"/>
+                <constraint firstItem="88F-Ib-kSY" firstAttribute="centerY" secondItem="esO-cT-Wqd" secondAttribute="centerY" id="xYS-hR-zoS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="animationView" destination="esO-cT-Wqd" id="3pL-gr-2mu"/>
+            </connections>
+            <point key="canvasLocation" x="230.43478260869566" y="-50.223214285714285"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="esO-cT-Wqd"/>
+    </designables>
+    <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
